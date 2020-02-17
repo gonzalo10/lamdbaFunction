@@ -11,3 +11,7 @@ def lambda_function_01(event, context):
         'statusCode': 200,
         'body': json.dumps(article.text)
     }
+
+
+if __name__ == '__main__':
+    print(lambda_function_01(None, None))
